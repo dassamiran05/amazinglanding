@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Landing page</title>
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./fontawesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="./jquery.min.js"></script>
+    <script>
+        $(function(){
+            var navmenu = document.getElementById("navmenu");
+            var close = document.getElementById("close");
+
+            close.onclick=function(){
+                if(navmenu.style.display =="none"){
+                    navmenu.style.display ="block"; 
+                }else{
+                    navmenu.style.display ="none";
+                }
+            }
+        });
+//         var scroll = new SmoothScroll('a[href*="#"]',{
+//         speed: 3000,
+//         speedAsDuration: true
+// });
+        function validateForm(){
+            var fname = document.forms["myForm"]["name"].value;
+            var email = document.forms["myForm"]["email"].value;
+            var sub = document.forms["myForm"]["subject"].value;
+            var msg = document.forms["myForm"]["message"].value;
+            if(fname != " "){
+                alert(`Hello ${fname} ${email} ${sub} ${msg} `);
+                return true;
+            }else{
+                alert("Invalid");
+                return false;
+            }            
+        }
+    </script>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="navbar">
+                <img src="./images/Logo.png" alt="">
+                <span id="close">&times;</span>
+                <ul class="nav-menu" id="navmenu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#customer-service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="header-content">
+                <h1>Have an amazing business meeting</h1>
+                <p>Have an amazing business meeting</p>
+                <button class="btn"><span></span>Learn more</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="what-we-do">
+        <div class="container">
+            <div class="do-content">
+                <div class="content-left">
+                    <h1>What <br> we<br> do</h1>
+                </div>
+                <div class="content-right">
+                    <div class="col">
+                        <img src="./images/icon-1.png" alt="">
+                        <div class="t-content">
+                            <h3>Web design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./images/icon-2.png" alt="">
+                        <div class="t-content">
+                            <h3>UI/UX Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./images/icon-3.png" alt="">
+                        <div class="t-content">
+                            <h3>Photography</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./images/icon-4.png" alt="">
+                        <div class="t-content">
+                            <h3>App development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="customer-service">
+        <div class="container">
+            <div class="cus-content">
+                <div class="cus-text">
+                    <h1>Exceptional Customer Service</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
+                    sed do eiusmod tempor Lorem ipsum dolor sit amet<br>
+                    consectetur adipiscing elit.</p>
+                    <button class="cus-btn">Need to help? lets chat</button>
+                </div>
+                <div class="cus-img">
+                    <img src="./images/banner2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="portfolio-content">
+                <h1>Our Portfolio</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, sequi!</p>
+                <div class="portfolio-btns">
+                    <button class="port-btn">All</button>
+                    <button class="port-btn">Web</button>
+                    <button class="port-btn">UI/UX</button>
+                    <button class="port-btn">Photography</button>
+                    <button class="port-btn">Branding</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <div class="gal-row">
+                <div class="gal-img">
+                    <img src="./images/gal-image-1.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-img">
+                            <img src="./images/search.png" alt="">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="gal-img">
+                    <img src="./images/gal-image-2.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-img">
+                            <img src="./images/search.png" alt="">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="gal-img">
+                    <img src="./images/gal-image-3.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-img">
+                            <img src="./images/search.png" alt="">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="gal-img">
+                    <img src="./images/gal-image-4.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-img">
+                            <img src="./images/search.png" alt="">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gal-row second">
+                <div class="gal-img">
+                    <img src="./images/gal-image-5.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-img">
+                            <img src="./images/search.png" alt="">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="gal-img">
+                    <img src="./images/gal-image-6.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-img">
+                            <img src="./images/search.png" alt="">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="gal-img">
+                    <img src="./images/gal-image-7.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-img">
+                            <img src="./images/search.png" alt="">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="gal-img">
+                    <img src="./images/gal-image-8.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-img">
+                            <img src="./images/search.png" alt="">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="statistics">
+        <div class="container">
+            <div class="stat-content">
+                <div class="col">
+                    <img src="./images/stat-icon-1.png" alt="">
+                    <h2>3,800+</h2>
+                    <p>Satified Clients</p>
+                </div>
+                <div class="col">
+                    <img src="./images/stat-icon-2.png" alt="">
+                    <h2>4510+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="col">
+                    <img src="./images/stat-icon-3.png" alt="">
+                    <h2>2,800+</h2>
+                    <p>Positive Feedbacks</p>
+                </div>
+                <div class="col">
+                    <img src="./images/stat-icon-4.png" alt="">
+                    <h2>5,500+</h2>
+                    <p>Freebies Released</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, placeat.</p>
+            <div class="contact-details">
+                <div class="form-div">
+                    <h2>Leave a message</h2>
+                    <form action="" method="get" onsubmit="return validateForm()" name="myForm">
+                        <input type="text" name="name" placeholder="Name"><br/>
+                        <input type="email" name="email" placeholder="Email"><br/>
+                        <input type="text" name="subject" placeholder="Subject"><br/>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your Message"></textarea><br/>
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <div class="address-div">
+                    <h2>Address:</h2>
+                    <div class="con">
+                        <img src="./images/contact-icon-home.png" alt="">
+                        <p>69/A , Road 3, Mohammadia Housing Ltd<br>
+                            Dhaka - 1207</p>
+                    </div>
+                    <div class="con">
+                        <img src="/images/contact-icon-mobile.png" alt="">
+                        <p>+880 1750727522<br>
+                            +880 1630742521</p>
+                    </div>
+                    <div class="con">
+                        <img src="/images/contact-icon-mail.png" alt="">
+                        <p>dassami@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="widgets">
+                <p>All right Researved © Muslim Mahin 2016</p>
+                <div class="social-icons">
+                    <img src="./images/social-facebook.png" alt="">
+                    <img src="./images/social-twitter.png" alt="">
+                    <img src="./images/social-instagram.png" alt="">
+                    <img src="./images/social-google+.png" alt="">
+                    <img src="./images/social-behance.png" alt="">
+                    <img src="./images/social-dribble.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
